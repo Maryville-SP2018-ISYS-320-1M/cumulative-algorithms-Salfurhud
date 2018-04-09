@@ -2,22 +2,29 @@ import java.util.Scanner;
 
 /*
 	ISYS 320
-	Name(s):
-	Date: 
+	Name(s):AlfurhudSolomon
+	Date: Apr8, 2018
 */
 
 /*
 1. Fill out the table for the loop below for the user inputs:
 4 3 5 2 6
 
-	| ITERATION 		 | VARIABLE NAME	 | VARIABLE NAME	 | VARIABLE NAME	 |
-	| initialization	 |				 |				 |				 | 
-	| 1				 |				 |				 |				 |
+	| ITERATION 		| accumulatorVariable	| NextInputVariable	| VARIABLE NAME	|
+	| initialization	|						|					|				| 
+	| 1					|		4				|		4			|				|
+	| 2					|		3				|		3			|				|
+	| 3					|		3				|		5			|				|
+	| 4					|		2				|		2			|				|
+	| 5					|		2				|		6			|				|
+
+	
 */
 
 /*
 2. What is does this algorithm accomplish? (i.e., what does it compute or find?)
 
+Finds the smallest number entered by the user
 
 */
 
@@ -36,6 +43,7 @@ public class P1_FollowTheCumulativeLoop {
 			if( nextInputValue < accumulatorVariable ) {
 				accumulatorVariable = nextInputValue;
 			}
+			
 		}
 		
 		System.out.println("The accumulated value is: " + accumulatorVariable);

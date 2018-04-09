@@ -1,12 +1,14 @@
 /*
 	ISYS 320
-	Name(s):
-	Date: 
+	Name(s):AlfurhudSolomon
+	Date: Apr8, 2018
 */
 
 /*
 3. What problems did you identify in the sumTo method below?
 
+ 	I remove the sum integer definition from inside the loop to outside the loop. 
+ 	Also added a return value for the method sumTo.
 
 */
 
@@ -18,11 +20,15 @@ public class P3_FixTheSumTo {
 
 	}
 	
-	public static int sumTo(int n) { 
-	    for (int i = 1; i <= n; i++) {
-	        int sum = 0; 
+	public static int sumTo(int n) {    
+		
+		int sum = 0; 
+	   
+		for (int i = 1; i <= n; i++) { 
 	        sum += i;
 	    }
+		
+		return sum;
 	}
 
 }
